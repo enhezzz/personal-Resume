@@ -1,0 +1,347 @@
+*{
+    box-sizing: border-box
+}
+ul{
+    list-style: none
+}
+body{
+    line-height: 1.5
+}
+.clearfix:after{
+    content: ' ';
+    display: block;
+    clear: both;
+}
+.container{
+    padding: 10% 5% 0 5%;
+}
+#menu{
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background: rgba(188, 25, 68, .4)
+}
+#menu ul{
+    float: right;
+    margin: 0;
+}
+#menu li{
+    width: 88px;
+    float: left;
+    line-height: 3.5;
+    border: none;
+}
+#menu a{
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    text-align: center
+}
+#menu li:hover{
+    box-shadow: 0 3px 6px -3px rgba(131, 24, 24, 0.3);
+}
+#menu .github-link{
+    background: url(/img/1.jpg) center/cover no-repeat;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    float: left;
+    margin: 7px 0 0 7px
+}
+#menu .github-link a{
+    width: 100%;
+    height: 100%;
+}
+.personal-intro{
+    padding:17% 0 0 0;
+    text-align: center
+}
+.avatar{
+    
+    margin: 0 auto;
+    width: 95px;
+    height: 95px;
+    overflow: hidden;
+    border-radius: 50%
+}
+.avatar>img{
+    width: 100%
+}
+.personal-intro .personal{
+    margin: 5% 7%;
+    line-height: 2.5;
+    font-weight: 700;
+    font-size: 20px
+}
+.tenoStack{
+    padding-top: 10%
+}
+.tenoStack .master{
+    margin-bottom: 3%;
+    line-height: 2
+}
+.tenoStack .masterShow{
+    width: 332px;
+    height: 332px;
+    position: relative;
+    float: left;
+}
+.tenoStack .interest .content-list .item{
+    margin-bottom:  15px;
+    text-indent: 71px
+}
+.tenoStack .masterShow .base,
+.tenoStack .masterShow .base .item,
+.tenoStack .masterShow .advanced .item{
+    border-radius: 50%;
+}
+.tenoStack .masterShow .base,
+.tenoStack .masterShow .advanced{
+    position: absolute;
+    border-radius: 50%
+}
+.tenoStack .masterShow .base{
+    width: 200px;
+    height: 200px;
+    border: 6px dashed #33f322;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.tenoStack .masterShow .base .item{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    
+    margin: -26px 0 0 -26px;
+    width: 52px;
+    height: 52px;
+    border: 1px solid #111;
+    transform-origin: 50% 126px;
+}
+.tenoStack .masterShow .base .item span,
+.tenoStack .masterShow .advanced .item span{
+    width: 100%;
+    height: 100%;
+    display: block;
+    animation: inherit;
+}
+.tenoStack .masterShow .advanced .item span{
+    animation-direction: normal
+}
+.tenoStack .masterShow .base .item span{
+    animation-direction: reverse
+}
+.tenoStack .masterShow .base .item span{
+    line-height: 3.5
+}
+.tenoStack .masterShow .advanced .item span{
+    line-height: 4
+}
+@keyframes spin{
+    to{
+        transform: rotate(1turn)
+    }
+}
+@keyframes spin90{
+    from{
+        transform: rotate(90deg)
+    }
+    to{
+        transform: rotate(450deg)
+    }
+}
+@keyframes spin-90{
+    from{
+        transform: rotate(-90deg)
+    }
+    to{
+        transform: rotate(-450deg)
+    }
+}
+@keyframes spin180{
+    from{
+        transform: rotate(180deg)
+    }
+    to{
+        transform: rotate(540deg)
+    }
+}
+@keyframes spin-180{
+    from{
+        transform: rotate(-180deg)
+    }
+    to{
+        transform: rotate(-540deg)
+    }
+}
+@keyframes spin270{
+    from{
+        transform: rotate(270deg)
+    }
+    to{
+        transform: rotate(630deg)
+    }
+}
+@keyframes spin-270{
+    from{
+        transform: rotate(-270deg)
+    }
+    to{
+        transform: rotate(-630deg)
+    }
+}
+
+.tenoStack .masterShow .advanced{
+    width: 100%;
+    height: 100%;
+    border: 6px dashed #6622ee;
+
+}
+.tenoStack .masterShow .base .item,
+.tenoStack .masterShow .advanced .item{
+    text-align: center;
+    animation: spin 10s infinite linear;
+}
+.tenoStack .masterShow .advanced .item{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: -30px 0 0 -30px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #111;
+    transform-origin: 50% 196px;
+    animation-direction: reverse
+}
+
+.tenoStack .masterShow .base .item:nth-child(2){
+    animation-name: spin90
+}
+.tenoStack .masterShow .base .item:nth-child(2) span{
+    animation-name: spin-90;
+    animation-direction: normal
+}
+.tenoStack .masterShow .base .item:nth-child(3){
+    animation-name: spin180
+}
+.tenoStack .masterShow .base .item:nth-child(3) span{
+    animation-name: spin-180;
+    animation-direction: normal
+}
+.tenoStack .masterShow .base .item:nth-child(4){
+    animation-name: spin270
+}
+.tenoStack .masterShow .base .item:nth-child(4) span{
+    animation-name: spin-270;
+    animation-direction: normal
+}
+
+.tenoStack .masterShow .advanced .item:nth-child(2){
+    animation-name: spin90;
+}
+.tenoStack .masterShow .advanced .item:nth-child(2) span{
+    animation-name: spin-90;
+    animation-direction: reverse
+}
+.tenoStack .masterShow .advanced .item:nth-child(3){
+    animation-name: spin180;
+}
+.tenoStack .masterShow .advanced .item:nth-child(3) span{
+    animation-name: spin-180;
+    animation-direction: reverse
+}
+.tenoStack .masterShow .advanced .item:nth-child(4){
+    animation-name: spin270;
+}
+.tenoStack .masterShow .advanced .item:nth-child(4) span{
+    animation-name: spin-270;
+    animation-direction: reverse
+}
+
+.interest{
+    float: left;
+    margin-left: 36%
+}
+/* @media screen and (min-width: 900px){
+    .col-lg-2{
+        width: 50%;
+    }
+} */
+.expriences .title,
+.tenoStack .title,
+.contact .title{
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 500
+}
+.expriences .example-panel{
+    width: 370px;
+    height: 280px;
+    border: 1px solid #eee;
+    float: left;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .4);
+    transition: box-shadow .5s
+}
+.expriences .example-panel:hover{
+   
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .5)
+}
+.expriences .example-panel:not(:first-child){
+   margin-left: 15px
+}
+.expriences .example-panel .title{
+   text-align: center;
+   line-height: 3;
+   border-bottom: 1px solid #ccc
+}
+.expriences .example-panel .teno{
+    text-indent: 7px;
+    padding: 10px
+}
+.contact{
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+.contact .title{
+    margin-bottom: 64px
+}
+.contact .content{
+    padding: 0 68px;
+    flex: 1
+}
+.contact .content .item{
+    float: left;
+}
+.contact .content .item:not(:first-child){
+    margin-left: 19%
+}
+.contact .content .item a{
+    font-size: 98px;
+    text-decoration: none
+}
+.contact .content .item .github{
+    
+    color: black
+}
+.contact .content .item .wechat{
+    color: #025D00;
+}
+.contact .content .item .qq{
+    color: #388BFF;
+}
+.contact .content .item .weibo{
+    color: #E32428;
+}
+.contact .content .item .address{
+    font-size: 16px;
+    display: block;
+    text-align: center
+}
+.contact .footer{
+    text-align: center;
+}

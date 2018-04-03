@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="./src/css/jquery.fullpage.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/index.css">
+    
+    <script src="./src/js/jquery.min.js"></script> -->
+</head>
+
+<body>
+    <div id="menu">
+        <div class="github-link">
+            <a href="https://github.com/enhezzz"></a>
+        </div>
+        <ul>
+            <li data-menuanchor="firstPage" class="active">
+                <a href="#firstPage">个人介绍
+                </a>
+            </li>
+            <li data-menuanchor="secondPage">
+                <a href="#secondPage">技术栈</a>
+            </li>
+            <li data-menuanchor="thirdPage">
+                <a href="#thirdPage">项目经验</a>
+            </li>
+            <li data-menuanchor="fourthPage">
+                <a href="#fourthPage">联系我</a>
+            </li>
+        </ul>
+    </div>
+    <div id="fullpage">
+
+        <div class="section personal-intro container">
+            <div class="avatar">
+                <img src="/img/1.jpg" alt="">
+            </div>
+            <div class="personal">
+                <div class="school">
+                    本人就读于齐齐哈尔大学，专业是软件工程
+                </div>
+                <div class="learning">
+                    研究方向主攻前端开发，也学习nodejs方面的知识
+                </div>
+
+            </div>
+        </div>
+        <div class="section tenoStack container">
+            <div class="master">
+                <div class="title">学习内容：</div>
+                <div class="content">
+                    <div class="item">迄今为止，在前端方面,我现在已经学习的基础内容有Html,css,Html5,css3，框架有vue2,angular2+;</div>
+                    <div class="item">在后端方面，我学习的nodejs</div>
+                </div>
+
+
+            </div>
+            <div class="masterShow">
+                <div class="base">
+                    <div class="item">
+                        <span>html</span>
+                    </div>
+                    <div class="item">
+                        <span>css</span>
+                    </div>
+                    <div class="item">
+                        <span>html5</span>
+                    </div>
+                    <div class="item">
+                        <span>css3</span>
+                    </div>
+
+                </div>
+                <div class="advanced">
+                    <div class="item">
+                        <span>html</span>
+                    </div>
+                    <div class="item">
+                        <span>html</span>
+                    </div>
+                    <div class="item">
+                        <span>html</span>
+                    </div>
+                    <div class="item">
+                        <span>html</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="interest">
+                <div class="title">
+                    兴趣方向：
+                </div>
+                <div class="content-list">
+                    <div class="item">
+                        css3动画
+                    </div>
+                    <div class="item">
+                        函数式编程
+                    </div>
+                    <div class="item">
+                        mv*
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section expriences container">
+            <div class="title">
+                <span>项目经验:</span>
+            </div>
+            <div class="example-panel">
+                <div class="title">123</div>
+                <div class="teno">teno</div>
+            </div>
+            <div class="example-panel">
+                <div class="title">123</div>
+                <div class="teno">teno</div>
+            </div>
+            <div class="example-panel">
+                <div class="title">123</div>
+                <div class="teno">teno</div>
+            </div>
+        </div>
+        <div class="section contact container">
+            <div class="title">
+                联系我:
+            </div>
+            <div class="content clearfix">
+                <div class="item">
+                    <a href="" class="github">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        <i class="address">Github</i>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="" class="wechat">
+                        <i class="fa fa-weixin" aria-hidden="true"></i>
+                        <i class="address">Wechat</i>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="" class="qq">
+                        <i class="fa fa-qq" aria-hidden="true"></i>
+                        <i class="address">QQ</i>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="" class="weibo">
+                            <i class="fa fa-weibo" aria-hidden="true"></i>
+                            <i class="address">Weibo</i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer">
+                <span>
+                        <i class="fa fa-copyright" aria-hidden="true"></i>2018 Design By Hgs/Enhezzz
+                </span>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <script src="https://cdn.bootcss.com/fullPage.js/2.9.6/jquery.fullpage.js"></script> -->
+<!-- <script src="./src/js/jquery.fullpage.js"></script> -->
+<!-- <script>
+  $(document).ready(function () {
+    $('#fullpage').fullpage({
+        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+        sectionsColor: ['#6699CC', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
+        // autoScrolling: false,
+        // fitToSection: false,
+        // fitToSectionDelay: 200,
+        // scrollBar: true,
+        menu: '#menu',
+        fixedElements: '#menu',
+        // dragAndMove: true,   
+        // offsetSections: true,
+        // fadingEffect: true,
+        navigation: true,
+        navigationTooltips: ['firstSlide', 'secondSlide'],
+        // showActiveTooltip: true,
+        slidesNavigation: true,
+        // responsiveSlides: true,
+        parallax: true,
+        verticalCentered: false,
+        // continuousVertical: true
+        //     afterLoad: function(anchorLink, index){
+        // 	var loadedSection = $(this);
+
+        // 	//使用 index
+        // 	if(index == 3){
+        // 		alert("第3节停止加载");
+        // 	}
+
+        // 	//使用 anchorLink
+        // 	if(anchorLink == 'secondPage'){
+        // 		alert("第2节停止加载");
+        // 	}
+        // },
+        // onLeave: function(index, nextIndex, direction){
+        // 	//如果目标是第三节，它将不会滚动
+        // 	if(nextIndex == 3){
+        // 		return false;
+        // 	}
+        // }
+    });
+});
+
+</script> -->
+
+</html>
