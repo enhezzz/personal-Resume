@@ -13,7 +13,7 @@ body{
     clear: both;
 }
 .container{
-    padding: 10% 5% 0 5%;
+    padding: 7% 5% 0 5%;
 }
 #menu{
     width: 100%;
@@ -40,7 +40,7 @@ body{
     text-align: center
 }
 #menu li:hover{
-    box-shadow: 0 3px 6px -3px rgba(131, 24, 24, 0.3);
+    box-shadow: 0 8px 26px -8px rgba(131, 24, 24, 0.3);
 }
 #menu .github-link{
     background: url(/img/1.jpg) center/cover no-repeat;
@@ -58,6 +58,22 @@ body{
     padding:17% 0 0 0;
     text-align: center
 }
+.personal-intro .motto{
+    border-bottom: 2px solid rgba(210, 210, 210, .7);
+    width: 40%;
+    line-height: 1.5;
+    padding: 1% 0;
+    margin: auto;
+    color: rgba(210, 210, 210, .9);
+    font-size: 21px;
+    text-shadow: 1px 1px 2px #aaa;
+    margin-bottom: 15px
+}
+.personal-intro .name{
+    line-height: 2.5;
+    font-weight: 700;
+    font-size: 20px
+}
 .avatar{
     
     margin: 0 auto;
@@ -70,21 +86,27 @@ body{
     width: 100%
 }
 .personal-intro .personal{
-    margin: 5% 7%;
+    
     line-height: 2.5;
     font-weight: 700;
-    font-size: 20px
-}
-.tenoStack{
-    padding-top: 10%
+    font-size: 20px;
+    padding: 0 10%
 }
 .tenoStack .master{
-    margin-bottom: 3%;
+    margin-bottom: 8%;
     line-height: 2
 }
+.tenoStack .master .content .item{
+    text-indent: 15px;
+    padding-left: 15px
+}
+.tenoStack .master .content .item,
+.expriences .example-panel .teno{
+    font-size: 18px;
+}
 .tenoStack .masterShow{
-    width: 332px;
-    height: 332px;
+    width: 266px;
+    height: 266px;
     position: relative;
     float: left;
 }
@@ -96,6 +118,7 @@ body{
 .tenoStack .masterShow .base .item,
 .tenoStack .masterShow .advanced .item{
     border-radius: 50%;
+    font-size: 12px
 }
 .tenoStack .masterShow .base,
 .tenoStack .masterShow .advanced{
@@ -103,9 +126,9 @@ body{
     border-radius: 50%
 }
 .tenoStack .masterShow .base{
-    width: 200px;
-    height: 200px;
-    border: 6px dashed #33f322;
+    width: 150px;
+    height: 150px;
+    border: 6px dashed rgba(0,0,0,.4);
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -116,11 +139,11 @@ body{
     top: 0;
     left: 50%;
     
-    margin: -26px 0 0 -26px;
-    width: 52px;
-    height: 52px;
-    border: 1px solid #111;
-    transform-origin: 50% 126px;
+    margin: -21px 0 0 -21px;
+    width: 42px;
+    height: 42px;
+    /* border: 1px solid #111; */
+    transform-origin: 50% 96px;
 }
 .tenoStack .masterShow .base .item span,
 .tenoStack .masterShow .advanced .item span{
@@ -146,6 +169,23 @@ body{
         transform: rotate(1turn)
     }
 }
+@keyframes spin60{
+    from{
+        transform: rotate(60deg)
+    }
+    to{
+        transform: rotate(420deg)
+    }
+}
+@keyframes spin-60{
+    from{
+        transform: rotate(-60deg)
+    }
+    to{
+        transform: rotate(-420deg)
+    }
+}
+
 @keyframes spin90{
     from{
         transform: rotate(90deg)
@@ -160,6 +200,22 @@ body{
     }
     to{
         transform: rotate(-450deg)
+    }
+}
+@keyframes spin120{
+    from{
+        transform: rotate(120deg)
+    }
+    to{
+        transform: rotate(480deg)
+    }
+}
+@keyframes spin-120{
+    from{
+        transform: rotate(-120deg)
+    }
+    to{
+        transform: rotate(-480deg)
     }
 }
 @keyframes spin180{
@@ -178,6 +234,22 @@ body{
         transform: rotate(-540deg)
     }
 }
+@keyframes spin240{
+    from{
+        transform: rotate(240deg)
+    }
+    to{
+        transform: rotate(600deg)
+    }
+}
+@keyframes spin-240{
+    from{
+        transform: rotate(-240deg)
+    }
+    to{
+        transform: rotate(-600deg)
+    }
+}
 @keyframes spin270{
     from{
         transform: rotate(270deg)
@@ -194,12 +266,27 @@ body{
         transform: rotate(-630deg)
     }
 }
+@keyframes spin300{
+    from{
+        transform: rotate(300deg)
+    }
+    to{
+        transform: rotate(660deg)
+    }
+}
+@keyframes spin-300{
+    from{
+        transform: rotate(-300deg)
+    }
+    to{
+        transform: rotate(-660deg)
+    }
+}
 
 .tenoStack .masterShow .advanced{
     width: 100%;
     height: 100%;
-    border: 6px dashed #6622ee;
-
+    border: 6px dashed rgba(0,0,0,.4);
 }
 .tenoStack .masterShow .base .item,
 .tenoStack .masterShow .advanced .item{
@@ -210,15 +297,19 @@ body{
     position: absolute;
     top: 0;
     left: 50%;
-    margin: -30px 0 0 -30px;
-    width: 60px;
-    height: 60px;
-    border: 1px solid #111;
-    transform-origin: 50% 196px;
+    margin: -25px 0 0 -25px;
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid #111; */
+    transform-origin: 50% 158px;
     animation-direction: reverse
 }
 
+.tenoStack .masterShow .base .item:nth-child(1){
+    background: rgba(226, 76, 37,.4);
+}
 .tenoStack .masterShow .base .item:nth-child(2){
+    background: rgba(60, 153, 220,.4);
     animation-name: spin90
 }
 .tenoStack .masterShow .base .item:nth-child(2) span{
@@ -226,45 +317,69 @@ body{
     animation-direction: normal
 }
 .tenoStack .masterShow .base .item:nth-child(3){
-    animation-name: spin180
+    animation-name: spin180;
+    background: rgba(207, 6, 74,.4)
 }
 .tenoStack .masterShow .base .item:nth-child(3) span{
     animation-name: spin-180;
     animation-direction: normal
 }
 .tenoStack .masterShow .base .item:nth-child(4){
-    animation-name: spin270
+    animation-name: spin270;
+    background: rgba(7, 105, 173,.4)
 }
 .tenoStack .masterShow .base .item:nth-child(4) span{
     animation-name: spin-270;
     animation-direction: normal
 }
 
+.tenoStack .masterShow .advanced .item:nth-child(1){
+    background: rgba(195, 0, 47,.4)
+}
 .tenoStack .masterShow .advanced .item:nth-child(2){
-    animation-name: spin90;
+    animation-name: spin120;
+    background: rgba(65, 184, 131,.4)
 }
 .tenoStack .masterShow .advanced .item:nth-child(2) span{
-    animation-name: spin-90;
+    animation-name: spin-120;
     animation-direction: reverse
 }
 .tenoStack .masterShow .advanced .item:nth-child(3){
     animation-name: spin180;
+    background: rgba(142, 214, 251,.4)
 }
 .tenoStack .masterShow .advanced .item:nth-child(3) span{
     animation-name: spin-180;
     animation-direction: reverse
 }
 .tenoStack .masterShow .advanced .item:nth-child(4){
-    animation-name: spin270;
+    animation-name: spin240;
+    background: rgba(128, 189, 1,.4)
 }
 .tenoStack .masterShow .advanced .item:nth-child(4) span{
-    animation-name: spin-270;
+    animation-name: spin-240;
+    animation-direction: reverse
+}
+.tenoStack .masterShow .advanced .item:nth-child(5){
+    animation-name: spin60;
+    background: rgba(24, 47, 81,.4)
+}
+.tenoStack .masterShow .advanced .item:nth-child(5) span{
+    animation-name: spin-60;
+    animation-direction: reverse
+}
+.tenoStack .masterShow .advanced .item:nth-child(6){
+    animation-name: spin300;
+    background: rgba(245, 77, 39,.4)
+}
+.tenoStack .masterShow .advanced .item:nth-child(6) span{
+    animation-name: spin-300;
     animation-direction: reverse
 }
 
 .interest{
     float: left;
-    margin-left: 36%
+    margin-right: 36%
 }
 /* @media screen and (min-width: 900px){
     .col-lg-2{
@@ -274,9 +389,10 @@ body{
 .expriences .title,
 .tenoStack .title,
 .contact .title{
-    margin-bottom: 30px;
+    margin-bottom: 8px;
     font-size: 25px;
-    font-weight: 500
+    font-weight: 500;
+    line-height: 2
 }
 .expriences .example-panel{
     width: 370px;
@@ -284,7 +400,8 @@ body{
     border: 1px solid #eee;
     float: left;
     box-shadow: 0 4px 4px rgba(0, 0, 0, .4);
-    transition: box-shadow .5s
+    transition: box-shadow .5s;
+    margin-bottom: 15px
 }
 .expriences .example-panel:hover{
    
@@ -295,11 +412,11 @@ body{
 }
 .expriences .example-panel .title{
    text-align: center;
-   line-height: 3;
+   line-height: 2.5;
    border-bottom: 1px solid #ccc
 }
 .expriences .example-panel .teno{
-    text-indent: 7px;
+    text-indent: 5%;
     padding: 10px
 }
 .contact{
@@ -344,4 +461,6 @@ body{
 }
 .contact .footer{
     text-align: center;
+    padding: 4% 0 2%;
+    border-top: 1px solid #ddd
 }

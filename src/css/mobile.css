@@ -1,0 +1,58 @@
+@media screen and (max-width:440px){
+    #menu ul{
+        width: 100%;
+        padding: 0
+    }
+    #menu li{
+        width: 25%;
+
+    }
+    #menu .github-link{
+        display: none;
+    }
+    .container{
+        padding-top: 16%
+    }
+    .expriences .example-panel{
+        width: 90%;
+        height: 27%;
+    }
+    .expriences .example-panel .title{
+        line-height: 2
+    }
+    .tenoStack .master {
+        margin-bottom: 22%;
+    }
+    .expriences .title, .tenoStack .title, .contact .title {
+        margin-bottom: 15px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+    .tenoStack .master .content .item, .expriences .example-panel .teno {
+        font-size: 15px;
+    }
+    .tenoStack .master {
+    
+        line-height: 2;
+    }
+    .contact .content .item:not(:first-child) {
+        margin-left: 0;
+    }
+    .contact .content .item a {
+        font-size: 64px;
+    }
+    .contact .content .item {
+        float: none;
+    }
+    .contact .title {
+        margin-bottom: 18px;
+    }
+  
+    #fp-nav.right {
+        right: 3px;
+    }
+    .contact .content .item .address{
+        text-align: left
+    }
+}

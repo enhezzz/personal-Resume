@@ -1,5 +1,6 @@
 import '../css/jquery.fullpage.css'
 import '../css/index.css'
+import '../css/mobile.css'
 import $ from 'jquery'
 import 'fullpage.js'
 $(document).ready(function () {
