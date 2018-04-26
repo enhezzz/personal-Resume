@@ -24,13 +24,16 @@
         margin-bottom: 22%;
     }
     .expriences .title, .tenoStack .title, .contact .title {
-        margin-bottom: 15px;
-        font-size: 24px;
+        margin-bottom: 5px;
+        font-size: 17px;
         font-weight: 500;
         line-height: 1.5;
     }
+    .expriences .example-panel .teno {
+        padding: 0 10px;
+    }
     .tenoStack .master .content .item, .expriences .example-panel .teno {
-        font-size: 15px;
+        font-size: 14px;
     }
     .tenoStack .master {
     
@@ -54,5 +57,18 @@
     }
     .contact .content .item .address{
         text-align: left
+    }
+    .contact .content .item{
+        position: relative;
+    }
+    .contact .content .wechat+.code{
+        display: none
+    }
+    .contact .content .wechat+.code{
+        position: absolute;
+    }
+    .contact .content .wechat:hover+.code{
+        top: 0;
+        right: -15px
     }
 }

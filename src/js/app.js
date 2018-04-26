@@ -17,31 +17,12 @@ $(document).ready(function () {
         // offsetSections: true,
         // fadingEffect: true,
         navigation: true,
-        navigationTooltips: ['firstSlide', 'secondSlide'],
+        navigationTooltips: ['个人介绍', '技术栈','项目经验','联系我'],
         // showActiveTooltip: true,
         slidesNavigation: true,
         // responsiveSlides: true,
         parallax: true,
         verticalCentered: false,
-        // continuousVertical: true
-        //     afterLoad: function(anchorLink, index){
-        // 	var loadedSection = $(this);
-
-        // 	//使用 index
-        // 	if(index == 3){
-        // 		alert("第3节停止加载");
-        // 	}
-
-        // 	//使用 anchorLink
-        // 	if(anchorLink == 'secondPage'){
-        // 		alert("第2节停止加载");
-        // 	}
-        // },
-        // onLeave: function(index, nextIndex, direction){
-        // 	//如果目标是第三节，它将不会滚动
-        // 	if(nextIndex == 3){
-        // 		return false;
-        // 	}
-        // }
+      
     });
 });
